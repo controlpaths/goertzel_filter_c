@@ -1,0 +1,10 @@
+file ../../genesyszu/src/acquisition_control_v1_0.v
+file ../../genesyszu/src/obufds_inst.v
+file ../../genesyszu/src/vadj_set_genesys_v1_0.v
+file ../../genesyszu/src/zmod_adc_driver_v1_1.v
+
+
+outputdir ../../genesyszu/doc/
+
+wireandreg
+logo logo.png

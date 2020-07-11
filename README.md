@@ -25,7 +25,7 @@ This script generate a project for Eclypse Z7 board for generate a design that g
 
 For more detailed explanation, visit https://www.controlpaths.com  
 Project is uploaded to https://www.hackster.io/pablotrujillojuan
-Script for generate block design only available for Vivado 2019.1 and 2020.1.
+Script for generate block design only available for Vivado 2019.1 and 2020.1. If you use different version, you can find a image of block design in /doc folder.
 
 ## More information
 If you need more information, yo can contact me on my email pablo@controlpaths.com

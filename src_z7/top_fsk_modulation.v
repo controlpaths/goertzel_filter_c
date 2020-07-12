@@ -43,22 +43,22 @@ module top_fsk_modulation_v1_0 (
 
   reg [13:0] r14x64_signal [63:0];
   wire [13:0] w14_signal2write;
-  reg [5:0] r6_mem_index;
+  reg [4:0] r5_mem_index;
 
   initial $readmemh("signal_goertzel.mem", r14x64_signal);
 
   always @(posedge clk100mhz)
     if (rst)
-      r6_mem_index <= 6'd0;
+      r5_mem_index <= 6'd0;
     else
       if (i2_btn[0])
-        r6_mem_index <= r6_mem_index+6'd10;
+        r5_mem_index <= r5_mem_index+6'd10;
       else if (i2_btn[1])
-        r6_mem_index <= r6_mem_index+6'd5;
+        r5_mem_index <= r5_mem_index+6'd5;
       else
-        r6_mem_index <= r6_mem_index+6'd1;
+        r5_mem_index <= r5_mem_index+6'd1;
 
-  assign w14_signal2write = r14x64_signal[r6_mem_index];
+  assign w14_signal2write = r14x64_signal[r5_mem_index];
 
   assign o_f_change = i2_btn[0];
 

@@ -8,7 +8,12 @@ Board file for Genesys ZU can be found at Digilent's repository. (https://github
 Each project has a script associated to him. For create the project, init Vivado in tcl mode, and the execute the selected script.
 
 ```
-cd script/
+cd script/2020.1
+vivado -mode tcl -source ./<tcl_name>.tcl
+```
+or 
+```
+cd script/2019.1
 vivado -mode tcl -source ./<tcl_name>.tcl
 ```
 ## Hardware configuration
